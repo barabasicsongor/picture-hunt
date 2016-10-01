@@ -168,7 +168,11 @@
 		579826491DA0043800BB3EB8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				579826631DA03E2600BB3EB8 /* Logic */,
+=======
+				9CD9B6641DA039EE0057A2E4 /* Components */,
+>>>>>>> d920a7c74726a5cc02a0a4971331e94870c9099c
 				579826571DA00E9600BB3EB8 /* Constants */,
 				579826541DA00E5200BB3EB8 /* Utilities */,
 				5798264F1DA00D8D00BB3EB8 /* Wireframes */,
@@ -214,6 +218,7 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		579826631DA03E2600BB3EB8 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +252,13 @@
 				0B09DA89303A3589D06B20FC /* Pods-Picture Hunt.release.xcconfig */,
 			);
 			name = Pods;
+=======
+		9CD9B6641DA039EE0057A2E4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+>>>>>>> d920a7c74726a5cc02a0a4971331e94870c9099c
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
