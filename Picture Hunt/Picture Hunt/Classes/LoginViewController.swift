@@ -48,7 +48,6 @@ class LoginViewController: UIViewController {
 	}
 	
 	@IBAction func loginButtonTouch(_ sender: AnyObject) {
-		AuthService().addUser(withEmail: textField.text!)
 		delegate?.didPressLoginButton()
 	}
 }

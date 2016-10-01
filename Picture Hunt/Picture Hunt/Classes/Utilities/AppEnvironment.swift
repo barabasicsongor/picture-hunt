@@ -19,8 +19,7 @@ class AppEnvironment {
 	// MARK: - Private methods
 	
 	fileprivate func setupUserDefaults() {
-		let dictionary: [String: Any] = [Defaults.lastUser: "",
-		                  Defaults.arrows: 0]
+		let dictionary = [Defaults.loggedIn: false]
 		UserDefaults.standard.register(defaults: dictionary)
 	}
 	

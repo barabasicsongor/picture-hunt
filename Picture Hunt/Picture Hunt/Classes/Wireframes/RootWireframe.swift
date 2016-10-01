@@ -13,6 +13,7 @@ class RootWireframe {
 	// MARK: - Properties
 	
 	fileprivate var window: UIWindow!
+	fileprivate var appEnvironment: AppEnvironment?
 	fileprivate var loginWireframe: LoginWireframe?
 	fileprivate var mainWireframe: MainWireframe?
 
@@ -25,8 +26,10 @@ class RootWireframe {
 	// MARK: - Public methods
 	
 	func startFlow() {
+		appEnvironment = AppEnvironment()
+		appEnvironment?.setup()
 		
-		if AuthService().isLoggedIn() == true {
+		if UserDefaults.standard.bool(forKey: Defaults.loggedIn) == true {
 			// Logged in
 			mainWireframe = MainWireframe(window: window)
 			mainWireframe?.delegate = self
