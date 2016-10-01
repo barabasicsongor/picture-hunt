@@ -63,3 +63,36 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+Picture Hunt/Picture Hunt.xcworkspace/contents.xcworkspacedata
+Picture Hunt/Pods/Manifest.lock
+Picture Hunt/Pods/Pods.xcodeproj/project.pbxproj
+Picture Hunt/Pods/Target Support Files/Pods-Picture Hunt/Info.plist
+Picture Hunt/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt-acknowledgements.markdown
+Picture Hunt/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt-acknowledgements.plist
+Picture Hunt/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt-dummy.m
+Picture Hunt/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt-frameworks.sh
+Picture Hunt/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt-resources.sh
+Picture Hunt/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt-umbrella.h
+Picture Hunt/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt.debug.xcconfig
+Picture Hunt/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt.modulemap
+Picture Hunt/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt.release.xcconfig
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntTests/Info.plist
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntTests/Pods-Picture HuntTests-acknowledgements.markdown
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntTests/Pods-Picture HuntTests-acknowledgements.plist
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntTests/Pods-Picture HuntTests-dummy.m
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntTests/Pods-Picture HuntTests-frameworks.sh
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntTests/Pods-Picture HuntTests-resources.sh
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntTests/Pods-Picture HuntTests-umbrella.h
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntTests/Pods-Picture HuntTests.debug.xcconfig
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntTests/Pods-Picture HuntTests.modulemap
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntTests/Pods-Picture HuntTests.release.xcconfig
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntUITests/Info.plist
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntUITests/Pods-Picture HuntUITests-acknowledgements.markdown
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntUITests/Pods-Picture HuntUITests-acknowledgements.plist
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntUITests/Pods-Picture HuntUITests-dummy.m
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntUITests/Pods-Picture HuntUITests-frameworks.sh
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntUITests/Pods-Picture HuntUITests-resources.sh
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntUITests/Pods-Picture HuntUITests-umbrella.h
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntUITests/Pods-Picture HuntUITests.debug.xcconfig
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntUITests/Pods-Picture HuntUITests.modulemap
+Picture Hunt/Pods/Target Support Files/Pods-Picture HuntUITests/Pods-Picture HuntUITests.release.xcconfig
