@@ -24,9 +24,13 @@
 		5798265D1DA01F6700BB3EB8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798265C1DA01F6700BB3EB8 /* MainViewController.swift */; };
 		579826601DA0356F00BB3EB8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5798265E1DA0356F00BB3EB8 /* Settings.storyboard */; };
 		579826621DA0359A00BB3EB8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826611DA0359A00BB3EB8 /* SettingsViewController.swift */; };
+<<<<<<< HEAD
 		579826661DA03E4000BB3EB8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826651DA03E4000BB3EB8 /* Post.swift */; };
 		579826691DA0430800BB3EB8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826681DA0430800BB3EB8 /* AuthService.swift */; };
 		5798266C1DA04AB100BB3EB8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798266B1DA04AB000BB3EB8 /* DataService.swift */; };
+=======
+		95DA94B61DA0453B0030A2EA /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA94B51DA0453B0030A2EA /* SettingsTableViewCell.swift */; };
+>>>>>>> 436a29668d24a4346e047dfbeac8fb615129b7a4
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,11 +74,15 @@
 		5798265C1DA01F6700BB3EB8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/MainViewController.swift; sourceTree = "<group>"; };
 		5798265F1DA0356F00BB3EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		579826611DA0359A00BB3EB8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Classes/SettingsViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		579826651DA03E4000BB3EB8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Classes/Logic/DTO/Post.swift; sourceTree = "<group>"; };
 		579826681DA0430800BB3EB8 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = Classes/Logic/Service/AuthService.swift; sourceTree = "<group>"; };
 		5798266B1DA04AB000BB3EB8 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = Classes/Logic/Service/DataService.swift; sourceTree = "<group>"; };
 		935D174F78396C1F933A0958 /* Pods-Picture Hunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picture Hunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt.debug.xcconfig"; sourceTree = "<group>"; };
 		EDEF810EBFE6D7E11C3EF739 /* Pods_Picture_Hunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Picture_Hunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+		95DA94B51DA0453B0030A2EA /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+>>>>>>> 436a29668d24a4346e047dfbeac8fb615129b7a4
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +196,7 @@
 				5798264B1DA0045900BB3EB8 /* LoginViewController.swift */,
 				5798265C1DA01F6700BB3EB8 /* MainViewController.swift */,
 				579826611DA0359A00BB3EB8 /* SettingsViewController.swift */,
+				95DA94B51DA0453B0030A2EA /* SettingsTableViewCell.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -473,6 +482,7 @@
 				579826621DA0359A00BB3EB8 /* SettingsViewController.swift in Sources */,
 				5798264C1DA0045900BB3EB8 /* LoginViewController.swift in Sources */,
 				579826591DA00EA600BB3EB8 /* Constants.swift in Sources */,
+				95DA94B61DA0453B0030A2EA /* SettingsTableViewCell.swift in Sources */,
 				5798265B1DA01E9500BB3EB8 /* MainWireframe.swift in Sources */,
 				5798265D1DA01F6700BB3EB8 /* MainViewController.swift in Sources */,
 				579826531DA00E4000BB3EB8 /* LoginWireframe.swift in Sources */,

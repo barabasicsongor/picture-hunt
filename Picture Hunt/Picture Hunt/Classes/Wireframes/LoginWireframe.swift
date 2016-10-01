@@ -22,6 +22,7 @@ class LoginWireframe {
 	fileprivate var window: UIWindow!
 	fileprivate var welcomeViewController: WelcomeViewController?
 	fileprivate var loginViewController: LoginViewController?
+    fileprivate var settingsVC: SettingsViewController?
 	
 	// MARK: - Lifecycle
 	
@@ -32,9 +33,13 @@ class LoginWireframe {
 	// MARK: - Public methods
 	
 	func startLoginFlow() {
-		welcomeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController
-		welcomeViewController?.delegate = self
-		window.rootViewController = welcomeViewController
+        // TODO: Set this back
+//		welcomeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController
+//		welcomeViewController?.delegate = self
+//		window.rootViewController = welcomeViewController
+        
+        settingsVC = UIStoryboard(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController
+        window.rootViewController = settingsVC
 	}
 	
 }
