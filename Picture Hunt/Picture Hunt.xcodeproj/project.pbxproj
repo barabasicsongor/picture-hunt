@@ -147,6 +147,7 @@
 		579826491DA0043800BB3EB8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9CD9B6641DA039EE0057A2E4 /* Components */,
 				579826571DA00E9600BB3EB8 /* Constants */,
 				579826541DA00E5200BB3EB8 /* Utilities */,
 				5798264F1DA00D8D00BB3EB8 /* Wireframes */,
@@ -190,6 +191,13 @@
 				579826581DA00EA600BB3EB8 /* Constants.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		9CD9B6641DA039EE0057A2E4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
