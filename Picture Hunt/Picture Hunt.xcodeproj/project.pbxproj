@@ -23,6 +23,7 @@
 		5798265D1DA01F6700BB3EB8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798265C1DA01F6700BB3EB8 /* MainViewController.swift */; };
 		579826601DA0356F00BB3EB8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5798265E1DA0356F00BB3EB8 /* Settings.storyboard */; };
 		579826621DA0359A00BB3EB8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826611DA0359A00BB3EB8 /* SettingsViewController.swift */; };
+		95DA94B61DA0453B0030A2EA /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA94B51DA0453B0030A2EA /* SettingsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		5798265C1DA01F6700BB3EB8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/MainViewController.swift; sourceTree = "<group>"; };
 		5798265F1DA0356F00BB3EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		579826611DA0359A00BB3EB8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Classes/SettingsViewController.swift; sourceTree = "<group>"; };
+		95DA94B51DA0453B0030A2EA /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				5798264B1DA0045900BB3EB8 /* LoginViewController.swift */,
 				5798265C1DA01F6700BB3EB8 /* MainViewController.swift */,
 				579826611DA0359A00BB3EB8 /* SettingsViewController.swift */,
+				95DA94B51DA0453B0030A2EA /* SettingsTableViewCell.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				579826621DA0359A00BB3EB8 /* SettingsViewController.swift in Sources */,
 				5798264C1DA0045900BB3EB8 /* LoginViewController.swift in Sources */,
 				579826591DA00EA600BB3EB8 /* Constants.swift in Sources */,
+				95DA94B61DA0453B0030A2EA /* SettingsTableViewCell.swift in Sources */,
 				5798265B1DA01E9500BB3EB8 /* MainWireframe.swift in Sources */,
 				5798265D1DA01F6700BB3EB8 /* MainViewController.swift in Sources */,
 				579826531DA00E4000BB3EB8 /* LoginWireframe.swift in Sources */,
