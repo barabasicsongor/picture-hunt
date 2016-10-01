@@ -21,6 +21,8 @@
 		579826591DA00EA600BB3EB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826581DA00EA600BB3EB8 /* Constants.swift */; };
 		5798265B1DA01E9500BB3EB8 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798265A1DA01E9500BB3EB8 /* MainWireframe.swift */; };
 		5798265D1DA01F6700BB3EB8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798265C1DA01F6700BB3EB8 /* MainViewController.swift */; };
+		579826601DA0356F00BB3EB8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5798265E1DA0356F00BB3EB8 /* Settings.storyboard */; };
+		579826621DA0359A00BB3EB8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826611DA0359A00BB3EB8 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		579826581DA00EA600BB3EB8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Classes/Constants/Constants.swift; sourceTree = "<group>"; };
 		5798265A1DA01E9500BB3EB8 /* MainWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWireframe.swift; path = Classes/Wireframes/MainWireframe.swift; sourceTree = "<group>"; };
 		5798265C1DA01F6700BB3EB8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/MainViewController.swift; sourceTree = "<group>"; };
+		5798265F1DA0356F00BB3EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		579826611DA0359A00BB3EB8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Classes/SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		5798261A1DA0042700BB3EB8 /* Picture Hunt */ = {
 			isa = PBXGroup;
 			children = (
+				5798265E1DA0356F00BB3EB8 /* Settings.storyboard */,
 				579826491DA0043800BB3EB8 /* Classes */,
 				5798261B1DA0042700BB3EB8 /* AppDelegate.swift */,
 				5798261F1DA0042700BB3EB8 /* Main.storyboard */,
@@ -156,6 +161,7 @@
 				5798264D1DA006D100BB3EB8 /* WelcomeViewController.swift */,
 				5798264B1DA0045900BB3EB8 /* LoginViewController.swift */,
 				5798265C1DA01F6700BB3EB8 /* MainViewController.swift */,
+				579826611DA0359A00BB3EB8 /* SettingsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 				579826261DA0042700BB3EB8 /* LaunchScreen.storyboard in Resources */,
 				579826231DA0042700BB3EB8 /* Assets.xcassets in Resources */,
 				579826211DA0042700BB3EB8 /* Main.storyboard in Resources */,
+				579826601DA0356F00BB3EB8 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +333,7 @@
 				579826511DA00DA800BB3EB8 /* RootWireframe.swift in Sources */,
 				579826561DA00E5F00BB3EB8 /* AppEnvironment.swift in Sources */,
 				5798264E1DA006D100BB3EB8 /* WelcomeViewController.swift in Sources */,
+				579826621DA0359A00BB3EB8 /* SettingsViewController.swift in Sources */,
 				5798264C1DA0045900BB3EB8 /* LoginViewController.swift in Sources */,
 				579826591DA00EA600BB3EB8 /* Constants.swift in Sources */,
 				5798265B1DA01E9500BB3EB8 /* MainWireframe.swift in Sources */,
@@ -381,6 +389,14 @@
 				579826251DA0042700BB3EB8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5798265E1DA0356F00BB3EB8 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5798265F1DA0356F00BB3EB8 /* Base */,
+			);
+			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -580,6 +596,7 @@
 				579826421DA0042800BB3EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		579826431DA0042800BB3EB8 /* Build configuration list for PBXNativeTarget "Picture HuntTests" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +605,7 @@
 				579826451DA0042800BB3EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		579826461DA0042800BB3EB8 /* Build configuration list for PBXNativeTarget "Picture HuntUITests" */ = {
 			isa = XCConfigurationList;
@@ -596,6 +614,7 @@
 				579826481DA0042800BB3EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
