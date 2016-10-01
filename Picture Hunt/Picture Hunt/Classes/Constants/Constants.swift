@@ -9,7 +9,8 @@
 import UIKit
 
 struct Defaults {
-	static let loggedIn = "loggedIn"
+	static let lastUser = "lastUser"
+	static let arrows = "arrows"
 }
 
 struct Color {

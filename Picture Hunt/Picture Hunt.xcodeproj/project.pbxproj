@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D9A77E38C1883B0A634DBCE /* Pods_Picture_Hunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEF810EBFE6D7E11C3EF739 /* Pods_Picture_Hunt.framework */; };
 		5798261C1DA0042700BB3EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798261B1DA0042700BB3EB8 /* AppDelegate.swift */; };
 		579826211DA0042700BB3EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5798261F1DA0042700BB3EB8 /* Main.storyboard */; };
 		579826231DA0042700BB3EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579826221DA0042700BB3EB8 /* Assets.xcassets */; };
@@ -23,6 +24,9 @@
 		5798265D1DA01F6700BB3EB8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798265C1DA01F6700BB3EB8 /* MainViewController.swift */; };
 		579826601DA0356F00BB3EB8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5798265E1DA0356F00BB3EB8 /* Settings.storyboard */; };
 		579826621DA0359A00BB3EB8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826611DA0359A00BB3EB8 /* SettingsViewController.swift */; };
+		579826661DA03E4000BB3EB8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826651DA03E4000BB3EB8 /* Post.swift */; };
+		579826691DA0430800BB3EB8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826681DA0430800BB3EB8 /* AuthService.swift */; };
+		5798266C1DA04AB100BB3EB8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798266B1DA04AB000BB3EB8 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B09DA89303A3589D06B20FC /* Pods-Picture Hunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picture Hunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt.release.xcconfig"; sourceTree = "<group>"; };
 		579826181DA0042700BB3EB8 /* Picture Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Picture Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5798261B1DA0042700BB3EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		579826201DA0042700BB3EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +70,11 @@
 		5798265C1DA01F6700BB3EB8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/MainViewController.swift; sourceTree = "<group>"; };
 		5798265F1DA0356F00BB3EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		579826611DA0359A00BB3EB8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Classes/SettingsViewController.swift; sourceTree = "<group>"; };
+		579826651DA03E4000BB3EB8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Classes/Logic/DTO/Post.swift; sourceTree = "<group>"; };
+		579826681DA0430800BB3EB8 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = Classes/Logic/Service/AuthService.swift; sourceTree = "<group>"; };
+		5798266B1DA04AB000BB3EB8 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = Classes/Logic/Service/DataService.swift; sourceTree = "<group>"; };
+		935D174F78396C1F933A0958 /* Pods-Picture Hunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picture Hunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt.debug.xcconfig"; sourceTree = "<group>"; };
+		EDEF810EBFE6D7E11C3EF739 /* Pods_Picture_Hunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Picture_Hunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9A77E38C1883B0A634DBCE /* Pods_Picture_Hunt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1500BC21E960CCD546299B53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDEF810EBFE6D7E11C3EF739 /* Pods_Picture_Hunt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5798260F1DA0042700BB3EB8 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +118,8 @@
 				5798262F1DA0042800BB3EB8 /* Picture HuntTests */,
 				5798263A1DA0042800BB3EB8 /* Picture HuntUITests */,
 				579826191DA0042700BB3EB8 /* Products */,
+				FFF87E9EB44FA61922B38AF5 /* Pods */,
+				1500BC21E960CCD546299B53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +168,7 @@
 		579826491DA0043800BB3EB8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				579826631DA03E2600BB3EB8 /* Logic */,
 				579826571DA00E9600BB3EB8 /* Constants */,
 				579826541DA00E5200BB3EB8 /* Utilities */,
 				5798264F1DA00D8D00BB3EB8 /* Wireframes */,
@@ -192,6 +214,41 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
+		579826631DA03E2600BB3EB8 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				579826671DA042F200BB3EB8 /* Service */,
+				579826641DA03E2B00BB3EB8 /* DTO */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		579826641DA03E2B00BB3EB8 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				579826651DA03E4000BB3EB8 /* Post.swift */,
+			);
+			name = DTO;
+			sourceTree = "<group>";
+		};
+		579826671DA042F200BB3EB8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				579826681DA0430800BB3EB8 /* AuthService.swift */,
+				5798266B1DA04AB000BB3EB8 /* DataService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		FFF87E9EB44FA61922B38AF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				935D174F78396C1F933A0958 /* Pods-Picture Hunt.debug.xcconfig */,
+				0B09DA89303A3589D06B20FC /* Pods-Picture Hunt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,9 +256,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 579826401DA0042800BB3EB8 /* Build configuration list for PBXNativeTarget "Picture Hunt" */;
 			buildPhases = (
+				CA00BA67C0278ABFACF822F2 /* [CP] Check Pods Manifest.lock */,
 				579826141DA0042700BB3EB8 /* Sources */,
 				579826151DA0042700BB3EB8 /* Frameworks */,
 				579826161DA0042700BB3EB8 /* Resources */,
+				820A52FEEB9D77F5366377DB /* [CP] Embed Pods Frameworks */,
+				9BB6C7E0151E1E66DF376526 /* [CP] Copy Pods Resources */,
+				5798266A1DA044A500BB3EB8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -325,13 +386,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5798266A1DA044A500BB3EB8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quickblox.framework/strip-framework.sh\"";
+		};
+		820A52FEEB9D77F5366377DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BB6C7E0151E1E66DF376526 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA00BA67C0278ABFACF822F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		579826141DA0042700BB3EB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				579826511DA00DA800BB3EB8 /* RootWireframe.swift in Sources */,
+				5798266C1DA04AB100BB3EB8 /* DataService.swift in Sources */,
+				579826661DA03E4000BB3EB8 /* Post.swift in Sources */,
 				579826561DA00E5F00BB3EB8 /* AppEnvironment.swift in Sources */,
+				579826691DA0430800BB3EB8 /* AuthService.swift in Sources */,
 				5798264E1DA006D100BB3EB8 /* WelcomeViewController.swift in Sources */,
 				579826621DA0359A00BB3EB8 /* SettingsViewController.swift in Sources */,
 				5798264C1DA0045900BB3EB8 /* LoginViewController.swift in Sources */,
@@ -495,6 +620,7 @@
 		};
 		579826411DA0042800BB3EB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935D174F78396C1F933A0958 /* Pods-Picture Hunt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZUWW9J8PQJ;
@@ -508,6 +634,7 @@
 		};
 		579826421DA0042800BB3EB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B09DA89303A3589D06B20FC /* Pods-Picture Hunt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZUWW9J8PQJ;
