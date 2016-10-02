@@ -77,6 +77,9 @@
                             <constraint firstItem="2wp-Ru-AvI" firstAttribute="top" secondItem="ecG-xz-g5J" secondAttribute="top" id="wsR-SG-vVH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="2wp-Ru-AvI" id="gqa-UZ-vM8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFg-uv-Mmu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

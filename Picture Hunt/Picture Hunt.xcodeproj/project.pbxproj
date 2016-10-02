@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		577E04681DA1030A00B81D9E /* Submit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E04671DA1030A00B81D9E /* Submit.swift */; };
+		577E046A1DA110D700B81D9E /* AcceptDeclineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E04691DA110D700B81D9E /* AcceptDeclineViewController.swift */; };
 		5798261C1DA0042700BB3EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798261B1DA0042700BB3EB8 /* AppDelegate.swift */; };
 		579826211DA0042700BB3EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5798261F1DA0042700BB3EB8 /* Main.storyboard */; };
 		579826231DA0042700BB3EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579826221DA0042700BB3EB8 /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		577E04671DA1030A00B81D9E /* Submit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submit.swift; sourceTree = "<group>"; };
+		577E04691DA110D700B81D9E /* AcceptDeclineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AcceptDeclineViewController.swift; path = Classes/AcceptDeclineViewController.swift; sourceTree = "<group>"; };
 		579826181DA0042700BB3EB8 /* Picture Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Picture Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5798261B1DA0042700BB3EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		579826201DA0042700BB3EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -192,10 +196,11 @@
 				5798265C1DA01F6700BB3EB8 /* MainViewController.swift */,
 				579826611DA0359A00BB3EB8 /* SettingsViewController.swift */,
 				95DA94B51DA0453B0030A2EA /* SettingsTableViewCell.swift */,
-				5798267E1DA0959500BB3EB8 /* NewsViewController.swift */,
 				579826821DA0B63000BB3EB8 /* AddViewController.swift */,
 				579826801DA0961100BB3EB8 /* PostDetailViewController.swift */,
 				57FA7F191DA0C36E004AA47B /* CaptureViewController.swift */,
+				5798267E1DA0959500BB3EB8 /* NewsViewController.swift */,
+				577E04691DA110D700B81D9E /* AcceptDeclineViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				5798266F1DA05B5900BB3EB8 /* Post.swift */,
+				577E04671DA1030A00B81D9E /* Submit.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -480,6 +486,7 @@
 				57FA7F1A1DA0C36E004AA47B /* CaptureViewController.swift in Sources */,
 				579826761DA05B5900BB3EB8 /* AuthService.swift in Sources */,
 				5798267B1DA05B8F00BB3EB8 /* AppEnvironment.swift in Sources */,
+				577E04681DA1030A00B81D9E /* Submit.swift in Sources */,
 				579826591DA00EA600BB3EB8 /* Constants.swift in Sources */,
 				95DA94B61DA0453B0030A2EA /* SettingsTableViewCell.swift in Sources */,
 				5798265B1DA01E9500BB3EB8 /* MainWireframe.swift in Sources */,
@@ -488,6 +495,7 @@
 				5798261C1DA0042700BB3EB8 /* AppDelegate.swift in Sources */,
 				5798267F1DA0959500BB3EB8 /* NewsViewController.swift in Sources */,
 				57FA7F181DA0BBEA004AA47B /* NewsTableViewCell.swift in Sources */,
+				577E046A1DA110D700B81D9E /* AcceptDeclineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

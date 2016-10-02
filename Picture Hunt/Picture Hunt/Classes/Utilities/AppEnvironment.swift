@@ -20,7 +20,8 @@ class AppEnvironment {
 	
 	fileprivate func setupUserDefaults() {
 		let dictionary: [String: Any] = [Defaults.lastUser: "",
-		                                 Defaults.arrows: 0]
+		                                 Defaults.arrows: 0,
+		                                 Defaults.idCounter:1]
 		UserDefaults.standard.register(defaults: dictionary)
 	}
 	

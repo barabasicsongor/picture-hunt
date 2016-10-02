@@ -119,6 +119,7 @@ extension PostDetailViewController: UIImagePickerControllerDelegate, UINavigatio
 		
 		let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CaptureViewController") as! CaptureViewController
 		vc.image = chosenImage
+		vc.post = post
 		
 		dismiss(animated: true, completion: nil)
 		self.navigationController?.pushViewController(vc, animated: true)

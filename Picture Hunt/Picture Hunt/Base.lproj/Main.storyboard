@@ -145,7 +145,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="120" id="OP7-Si-Y0f" customClass="PostTableViewCell" customModule="Picture_Hunt" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="120"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OP7-Si-Y0f" id="XXA-rQ-OfX">
                                             <frame key="frameInset" width="375" height="120"/>
@@ -308,33 +308,13 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2lQ-Dx-tqm">
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="160" id="82V-Wp-MYf"/>
+                                                        <constraint firstAttribute="height" constant="180" id="82V-Wp-MYf"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owx-wK-2nu">
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                    <state key="normal" title="Decline">
-                                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnr-Rm-SCy">
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                                    <state key="normal" title="Accept">
-                                                        <color key="titleColor" red="0.0022941834552112623" green="0.80795923223350252" blue="0.40386125678240681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="2lQ-Dx-tqm" secondAttribute="trailing" id="5Cj-Xx-kRn"/>
-                                                <constraint firstAttribute="bottom" secondItem="Owx-wK-2nu" secondAttribute="bottom" id="5qW-Qc-Ko3"/>
-                                                <constraint firstAttribute="bottom" secondItem="pnr-Rm-SCy" secondAttribute="bottom" id="9pl-0y-5tH"/>
-                                                <constraint firstItem="pnr-Rm-SCy" firstAttribute="leading" secondItem="Owx-wK-2nu" secondAttribute="trailing" id="C5q-Wc-PSz"/>
-                                                <constraint firstItem="Owx-wK-2nu" firstAttribute="width" secondItem="pnr-Rm-SCy" secondAttribute="width" id="ONb-MS-Gvx"/>
-                                                <constraint firstItem="Owx-wK-2nu" firstAttribute="leading" secondItem="D2E-cH-lWe" secondAttribute="leading" id="WDS-v4-Qcc"/>
-                                                <constraint firstItem="pnr-Rm-SCy" firstAttribute="top" secondItem="2lQ-Dx-tqm" secondAttribute="bottom" id="X8Q-tA-ua5"/>
-                                                <constraint firstItem="Owx-wK-2nu" firstAttribute="top" secondItem="2lQ-Dx-tqm" secondAttribute="bottom" id="dEi-pr-a3n"/>
                                                 <constraint firstItem="2lQ-Dx-tqm" firstAttribute="leading" secondItem="D2E-cH-lWe" secondAttribute="leadingMargin" id="e4T-6g-dVH"/>
-                                                <constraint firstAttribute="trailing" secondItem="pnr-Rm-SCy" secondAttribute="trailing" id="ezf-vq-OH1"/>
                                                 <constraint firstItem="2lQ-Dx-tqm" firstAttribute="top" secondItem="D2E-cH-lWe" secondAttribute="topMargin" id="qw0-82-LqG"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -343,6 +323,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="p2u-hv-tCR" id="dnb-zZ-bL4"/>
+                                    <outlet property="delegate" destination="p2u-hv-tCR" id="NqF-KC-yvs"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -353,6 +337,9 @@
                             <constraint firstItem="S5x-y1-QlS" firstAttribute="leading" secondItem="WGn-g4-iPq" secondAttribute="leading" id="zzO-5c-V8J"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="S5x-y1-QlS" id="PMP-eU-eBt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oHG-Xd-wPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -371,6 +358,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nX-7k-XPx">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Send"/>
                                 <connections>
                                     <action selector="sendButtonTouch:" destination="2g3-no-lX9" eventType="touchUpInside" id="lPe-H4-Shn"/>
@@ -399,10 +387,58 @@
             </objects>
             <point key="canvasLocation" x="4466.3999999999996" y="829.83508245877067"/>
         </scene>
+        <!--Accept Decline View Controller-->
+        <scene sceneID="QDs-q3-LzU">
+            <objects>
+                <viewController storyboardIdentifier="AcceptDeclineViewController" id="TmD-Fj-nI0" customClass="AcceptDeclineViewController" customModule="Picture_Hunt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DwZ-aP-hpe"/>
+                        <viewControllerLayoutGuide type="bottom" id="adC-cr-Hxo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WW0-7h-ovj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U77-oV-uh5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hv0-Pk-7ol"/>
+                                </constraints>
+                                <state key="normal" image="deny"/>
+                                <connections>
+                                    <action selector="decline:" destination="TmD-Fj-nI0" eventType="touchUpInside" id="TTw-R3-tBp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSU-mp-S7s">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LR3-CR-XCt"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="accept"/>
+                                <connections>
+                                    <action selector="accept:" destination="TmD-Fj-nI0" eventType="touchUpInside" id="4Wv-aQ-k4v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JSU-mp-S7s" firstAttribute="leading" secondItem="U77-oV-uh5" secondAttribute="trailing" id="1hm-10-436"/>
+                            <constraint firstItem="U77-oV-uh5" firstAttribute="leading" secondItem="WW0-7h-ovj" secondAttribute="leadingMargin" id="3vq-WS-1Rv"/>
+                            <constraint firstItem="U77-oV-uh5" firstAttribute="centerY" secondItem="WW0-7h-ovj" secondAttribute="centerY" id="50T-F2-YkZ"/>
+                            <constraint firstItem="U77-oV-uh5" firstAttribute="width" secondItem="JSU-mp-S7s" secondAttribute="width" id="fqO-Yw-l1f"/>
+                            <constraint firstItem="JSU-mp-S7s" firstAttribute="centerY" secondItem="WW0-7h-ovj" secondAttribute="centerY" id="mGw-tb-gvM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JSU-mp-S7s" secondAttribute="trailing" id="tDw-o4-aM4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cl-0T-IYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5292" y="830"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="accept" width="805" height="403"/>
         <image name="back_button" width="25" height="17"/>
         <image name="cameraButton" width="1080" height="1080"/>
+        <image name="deny" width="804" height="403"/>
         <image name="login_background" width="375" height="667"/>
         <image name="login_button" width="366" height="120"/>
         <image name="logo" width="1017" height="640"/>

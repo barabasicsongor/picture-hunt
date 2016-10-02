@@ -8,6 +8,7 @@
 
 import UIKit
 import Quickblox
+import MBProgressHUD
 
 protocol SettingsViewControllerDelegate: class {
 	func didPressBackButton()
@@ -20,14 +21,15 @@ class SettingsViewController: UIViewController {
 	
     fileprivate var titleArray: [String]!
     fileprivate var dataArray: [String]!
+	var dataService: DataService!
+	@IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        titleArray = ["E-mail","Arrows"]
-		
-		let arrows = String(describing: UserDefaults.standard.object(forKey: Defaults.arrows)!)
-        dataArray = [UserDefaults.standard.object(forKey: Defaults.lastUser) as! String ,arrows]
+		titleArray = []
+		dataArray = []
+		loadData()
     }
 	
 	// MARK: - Callbacks
@@ -38,9 +40,21 @@ class SettingsViewController: UIViewController {
 	
 	@IBAction func logoutButtonTouch(_ sender: AnyObject) {
 		delegate?.didPressLogOutButton()
-		
 	}
 
+	func loadData() {
+		MBProgressHUD.showAdded(to: self.view, animated: true)
+		dataService = DataService()
+		dataService.getCollect()
+		
+		titleArray = ["E-mail","Arrows"]
+		let arrows = String(describing: UserDefaults.standard.object(forKey: Defaults.arrows)!)
+		dataArray = [UserDefaults.standard.object(forKey: Defaults.lastUser) as! String ,arrows]
+		
+		MBProgressHUD.hide(for: self.view, animated: true)
+		tableView.reloadData()
+	}
+	
 }
 
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {

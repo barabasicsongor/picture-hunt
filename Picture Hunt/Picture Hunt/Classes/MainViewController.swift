@@ -33,7 +33,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		posts = []
+		dataService = DataService()
 		setupUI()
+		
+		self.title = "Treasures"
     }
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -103,7 +106,6 @@ class MainViewController: UIViewController {
 	
 	fileprivate func loadData() {
 		posts = []
-		dataService = DataService()
 		dataService.getPosts(completion: { [weak self] result in
 			guard let strongSelf = self else { return }
 			strongSelf.posts = result

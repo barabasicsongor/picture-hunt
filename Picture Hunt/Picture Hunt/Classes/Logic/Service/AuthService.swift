@@ -26,7 +26,9 @@ class AuthService {
 		
 		UserDefaults.standard.set(email, forKey: Defaults.lastUser)
 		
-		QBRequest.signUp(user, successBlock: nil, errorBlock: nil)
+		QBRequest.signUp(user, successBlock: nil, errorBlock: {
+			error in self.logIn(withEmail: email)
+		})
 	}
 	
 	func logIn(withEmail email: String) {

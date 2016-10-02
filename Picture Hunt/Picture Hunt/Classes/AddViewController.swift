@@ -8,6 +8,7 @@
 
 import UIKit
 import Quickblox
+import MBProgressHUD
 
 class AddViewController: UIViewController {
 	
@@ -38,6 +39,8 @@ class AddViewController: UIViewController {
 	}
 	
 	@IBAction func sendButtonTouch(_ sender: AnyObject) {
+		MBProgressHUD.showAdded(to: self.view, animated: true)
+		
 		let title = textField.text
 		let imageData = UIImagePNGRepresentation(imageView.image!)
 		QBRequest.tUploadFile(imageData!, fileName: title!, contentType: "image/png", isPublic: true, successBlock: {response, blob in
@@ -48,11 +51,18 @@ class AddViewController: UIViewController {
 			object.fields.setObject(blob.publicUrl()!, forKey: "imageURL" as NSCopying)
 			object.fields.setObject(UserDefaults.standard.object(forKey: Defaults.lastUser)!, forKey: "userEmail" as NSCopying)
 			object.fields.setObject(10, forKey: "value" as NSCopying)
-			object.fields.setObject(12, forKey: "postID" as NSCopying)
+			object.fields.setObject(10 + UserDefaults.standard.integer(forKey: Defaults.idCounter), forKey: "postID" as NSCopying)
+			
+			var postID = UserDefaults.standard.integer(forKey: Defaults.idCounter)
+			postID = postID + 1
+			UserDefaults.standard.set(postID, forKey: Defaults.idCounter)
 			
 			QBRequest.createObject(object, successBlock: {response, object in
-				self.navigationController?.popViewController(animated: true)
-				}, errorBlock: nil)
+				MBProgressHUD.hide(for: self.view, animated: true)
+				_ = self.navigationController?.popViewController(animated: true)
+				}, errorBlock: {error in
+					
+			})
 			}, statusBlock: nil, errorBlock: nil)
 	}
 

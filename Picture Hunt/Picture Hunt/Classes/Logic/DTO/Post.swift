@@ -11,10 +11,8 @@ import Quickblox
 
 struct Post {
 	var postID: Int!
-	var userID: Int!
 	var userEmail: String!
 	var title: String!
 	var imageURL: String!
-	var imageData: UIImage!
 	var value: Int!
 }
