@@ -17,13 +17,23 @@
 		5798264E1DA006D100BB3EB8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798264D1DA006D100BB3EB8 /* WelcomeViewController.swift */; };
 		579826511DA00DA800BB3EB8 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826501DA00DA800BB3EB8 /* RootWireframe.swift */; };
 		579826531DA00E4000BB3EB8 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826521DA00E4000BB3EB8 /* LoginWireframe.swift */; };
-		579826561DA00E5F00BB3EB8 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826551DA00E5F00BB3EB8 /* AppEnvironment.swift */; };
 		579826591DA00EA600BB3EB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826581DA00EA600BB3EB8 /* Constants.swift */; };
 		5798265B1DA01E9500BB3EB8 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798265A1DA01E9500BB3EB8 /* MainWireframe.swift */; };
 		5798265D1DA01F6700BB3EB8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798265C1DA01F6700BB3EB8 /* MainViewController.swift */; };
 		579826601DA0356F00BB3EB8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5798265E1DA0356F00BB3EB8 /* Settings.storyboard */; };
 		579826621DA0359A00BB3EB8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826611DA0359A00BB3EB8 /* SettingsViewController.swift */; };
+		579826751DA05B5900BB3EB8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798266F1DA05B5900BB3EB8 /* Post.swift */; };
+		579826761DA05B5900BB3EB8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826711DA05B5900BB3EB8 /* AuthService.swift */; };
+		579826771DA05B5900BB3EB8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826721DA05B5900BB3EB8 /* DataService.swift */; };
+		5798267B1DA05B8F00BB3EB8 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798267A1DA05B8F00BB3EB8 /* AppEnvironment.swift */; };
+		5798267D1DA060CB00BB3EB8 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798267C1DA060CB00BB3EB8 /* PostTableViewCell.swift */; };
+		5798267F1DA0959500BB3EB8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5798267E1DA0959500BB3EB8 /* NewsViewController.swift */; };
+		579826811DA0961100BB3EB8 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826801DA0961100BB3EB8 /* PostDetailViewController.swift */; };
+		579826831DA0B63100BB3EB8 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579826821DA0B63000BB3EB8 /* AddViewController.swift */; };
+		57FA7F181DA0BBEA004AA47B /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA7F171DA0BBEA004AA47B /* NewsTableViewCell.swift */; };
+		57FA7F1A1DA0C36E004AA47B /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA7F191DA0C36E004AA47B /* CaptureViewController.swift */; };
 		95DA94B61DA0453B0030A2EA /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA94B51DA0453B0030A2EA /* SettingsTableViewCell.swift */; };
+		BF169392B4FCFD6FE441D603 /* Pods_Picture_Hunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5729B733D349A989377AAB8 /* Pods_Picture_Hunt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +70,25 @@
 		5798264D1DA006D100BB3EB8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = Classes/WelcomeViewController.swift; sourceTree = "<group>"; };
 		579826501DA00DA800BB3EB8 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = Classes/Wireframes/RootWireframe.swift; sourceTree = "<group>"; };
 		579826521DA00E4000BB3EB8 /* LoginWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWireframe.swift; path = Classes/Wireframes/LoginWireframe.swift; sourceTree = "<group>"; };
-		579826551DA00E5F00BB3EB8 /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppEnvironment.swift; path = Classes/Utilities/AppEnvironment.swift; sourceTree = "<group>"; };
 		579826581DA00EA600BB3EB8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Classes/Constants/Constants.swift; sourceTree = "<group>"; };
 		5798265A1DA01E9500BB3EB8 /* MainWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWireframe.swift; path = Classes/Wireframes/MainWireframe.swift; sourceTree = "<group>"; };
 		5798265C1DA01F6700BB3EB8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/MainViewController.swift; sourceTree = "<group>"; };
 		5798265F1DA0356F00BB3EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		579826611DA0359A00BB3EB8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Classes/SettingsViewController.swift; sourceTree = "<group>"; };
+		5798266F1DA05B5900BB3EB8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		579826711DA05B5900BB3EB8 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		579826721DA05B5900BB3EB8 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		5798267A1DA05B8F00BB3EB8 /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppEnvironment.swift; path = Classes/Utilities/AppEnvironment.swift; sourceTree = "<group>"; };
+		5798267C1DA060CB00BB3EB8 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = Classes/Components/PostTableViewCell.swift; sourceTree = "<group>"; };
+		5798267E1DA0959500BB3EB8 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsViewController.swift; path = Classes/NewsViewController.swift; sourceTree = "<group>"; };
+		579826801DA0961100BB3EB8 /* PostDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostDetailViewController.swift; path = Classes/PostDetailViewController.swift; sourceTree = "<group>"; };
+		579826821DA0B63000BB3EB8 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddViewController.swift; path = Classes/AddViewController.swift; sourceTree = "<group>"; };
+		57FA7F171DA0BBEA004AA47B /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = Classes/Components/NewsTableViewCell.swift; sourceTree = "<group>"; };
+		57FA7F191DA0C36E004AA47B /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaptureViewController.swift; path = Classes/CaptureViewController.swift; sourceTree = "<group>"; };
+		614EB1EDE50413434153E8E1 /* Pods-Picture Hunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picture Hunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt.release.xcconfig"; sourceTree = "<group>"; };
 		95DA94B51DA0453B0030A2EA /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		A5729B733D349A989377AAB8 /* Pods_Picture_Hunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Picture_Hunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA459DFEDD249006F0CB831 /* Pods-Picture Hunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picture Hunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF169392B4FCFD6FE441D603 /* Pods_Picture_Hunt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +124,8 @@
 				5798262F1DA0042800BB3EB8 /* Picture HuntTests */,
 				5798263A1DA0042800BB3EB8 /* Picture HuntUITests */,
 				579826191DA0042700BB3EB8 /* Products */,
+				94AF3ED0042704275B364CB8 /* Pods */,
+				881EB251EBE9C555DCAF037A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,9 +174,10 @@
 		579826491DA0043800BB3EB8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				579826791DA05B7F00BB3EB8 /* Utilities */,
+				5798266D1DA05B5900BB3EB8 /* Logic */,
 				9CD9B6641DA039EE0057A2E4 /* Components */,
 				579826571DA00E9600BB3EB8 /* Constants */,
-				579826541DA00E5200BB3EB8 /* Utilities */,
 				5798264F1DA00D8D00BB3EB8 /* Wireframes */,
 				5798264A1DA0044100BB3EB8 /* View Controllers */,
 			);
@@ -166,6 +192,10 @@
 				5798265C1DA01F6700BB3EB8 /* MainViewController.swift */,
 				579826611DA0359A00BB3EB8 /* SettingsViewController.swift */,
 				95DA94B51DA0453B0030A2EA /* SettingsTableViewCell.swift */,
+				5798267E1DA0959500BB3EB8 /* NewsViewController.swift */,
+				579826821DA0B63000BB3EB8 /* AddViewController.swift */,
+				579826801DA0961100BB3EB8 /* PostDetailViewController.swift */,
+				57FA7F191DA0C36E004AA47B /* CaptureViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -180,14 +210,6 @@
 			name = Wireframes;
 			sourceTree = "<group>";
 		};
-		579826541DA00E5200BB3EB8 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				579826551DA00E5F00BB3EB8 /* AppEnvironment.swift */,
-			);
-			name = Utilities;
-			sourceTree = "<group>";
-		};
 		579826571DA00E9600BB3EB8 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,9 +218,63 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
+		5798266D1DA05B5900BB3EB8 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				5798266E1DA05B5900BB3EB8 /* DTO */,
+				579826701DA05B5900BB3EB8 /* Service */,
+			);
+			name = Logic;
+			path = Classes/Logic;
+			sourceTree = "<group>";
+		};
+		5798266E1DA05B5900BB3EB8 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				5798266F1DA05B5900BB3EB8 /* Post.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		579826701DA05B5900BB3EB8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				579826711DA05B5900BB3EB8 /* AuthService.swift */,
+				579826721DA05B5900BB3EB8 /* DataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		579826791DA05B7F00BB3EB8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5798267A1DA05B8F00BB3EB8 /* AppEnvironment.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		881EB251EBE9C555DCAF037A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5729B733D349A989377AAB8 /* Pods_Picture_Hunt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94AF3ED0042704275B364CB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDA459DFEDD249006F0CB831 /* Pods-Picture Hunt.debug.xcconfig */,
+				614EB1EDE50413434153E8E1 /* Pods-Picture Hunt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9CD9B6641DA039EE0057A2E4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5798267C1DA060CB00BB3EB8 /* PostTableViewCell.swift */,
+				57FA7F171DA0BBEA004AA47B /* NewsTableViewCell.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -210,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 579826401DA0042800BB3EB8 /* Build configuration list for PBXNativeTarget "Picture Hunt" */;
 			buildPhases = (
+				09D70CAD6A44E2EA14A36D50 /* [CP] Check Pods Manifest.lock */,
 				579826141DA0042700BB3EB8 /* Sources */,
 				579826151DA0042700BB3EB8 /* Frameworks */,
 				579826161DA0042700BB3EB8 /* Resources */,
+				C7EBDFA01E411907B9D4CE52 /* [CP] Embed Pods Frameworks */,
+				1DB937B82123795921BA89A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,22 +415,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09D70CAD6A44E2EA14A36D50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1DB937B82123795921BA89A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7EBDFA01E411907B9D4CE52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picture Hunt/Pods-Picture Hunt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		579826141DA0042700BB3EB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				579826511DA00DA800BB3EB8 /* RootWireframe.swift in Sources */,
-				579826561DA00E5F00BB3EB8 /* AppEnvironment.swift in Sources */,
+				579826771DA05B5900BB3EB8 /* DataService.swift in Sources */,
+				579826831DA0B63100BB3EB8 /* AddViewController.swift in Sources */,
+				579826811DA0961100BB3EB8 /* PostDetailViewController.swift in Sources */,
+				5798267D1DA060CB00BB3EB8 /* PostTableViewCell.swift in Sources */,
 				5798264E1DA006D100BB3EB8 /* WelcomeViewController.swift in Sources */,
+				579826751DA05B5900BB3EB8 /* Post.swift in Sources */,
 				579826621DA0359A00BB3EB8 /* SettingsViewController.swift in Sources */,
 				5798264C1DA0045900BB3EB8 /* LoginViewController.swift in Sources */,
+				57FA7F1A1DA0C36E004AA47B /* CaptureViewController.swift in Sources */,
+				579826761DA05B5900BB3EB8 /* AuthService.swift in Sources */,
+				5798267B1DA05B8F00BB3EB8 /* AppEnvironment.swift in Sources */,
 				579826591DA00EA600BB3EB8 /* Constants.swift in Sources */,
 				95DA94B61DA0453B0030A2EA /* SettingsTableViewCell.swift in Sources */,
 				5798265B1DA01E9500BB3EB8 /* MainWireframe.swift in Sources */,
 				5798265D1DA01F6700BB3EB8 /* MainViewController.swift in Sources */,
 				579826531DA00E4000BB3EB8 /* LoginWireframe.swift in Sources */,
 				5798261C1DA0042700BB3EB8 /* AppDelegate.swift in Sources */,
+				5798267F1DA0959500BB3EB8 /* NewsViewController.swift in Sources */,
+				57FA7F181DA0BBEA004AA47B /* NewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +643,7 @@
 		};
 		579826411DA0042800BB3EB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDA459DFEDD249006F0CB831 /* Pods-Picture Hunt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZUWW9J8PQJ;
@@ -520,6 +657,7 @@
 		};
 		579826421DA0042800BB3EB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614EB1EDE50413434153E8E1 /* Pods-Picture Hunt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZUWW9J8PQJ;

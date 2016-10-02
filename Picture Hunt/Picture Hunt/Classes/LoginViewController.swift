@@ -20,13 +20,13 @@ class LoginViewController: UIViewController {
 	weak var delegate: LoginViewControllerDelegate?
 	
 	@IBOutlet weak var textField: UITextField!
-
+	
 	// MARK: - Lifecycle
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		setupUI()
-    }
+	}
 	
 	// MARK: - UI
 	
@@ -48,6 +48,7 @@ class LoginViewController: UIViewController {
 	}
 	
 	@IBAction func loginButtonTouch(_ sender: AnyObject) {
+		AuthService().addUser(withEmail: textField.text!)
 		delegate?.didPressLoginButton()
 	}
 }

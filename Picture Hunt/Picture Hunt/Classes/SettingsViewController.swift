@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import Quickblox
+
+protocol SettingsViewControllerDelegate: class {
+	func didPressBackButton()
+	func didPressLogOutButton()
+}
 
 class SettingsViewController: UIViewController {
 
+	weak var delegate: SettingsViewControllerDelegate?
+	
     fileprivate var titleArray: [String]!
     fileprivate var dataArray: [String]!
     
@@ -17,13 +25,21 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         titleArray = ["E-mail","Arrows"]
-        dataArray = ["bbbc@bb.com","100"]
+		
+		let arrows = String(describing: UserDefaults.standard.object(forKey: Defaults.arrows)!)
+        dataArray = [UserDefaults.standard.object(forKey: Defaults.lastUser) as! String ,arrows]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+	
+	// MARK: - Callbacks
+	
+	@objc fileprivate func backButtonTouch() {
+		delegate?.didPressBackButton()
+	}
+	
+	@IBAction func logoutButtonTouch(_ sender: AnyObject) {
+		delegate?.didPressLogOutButton()
+		
+	}
 
 }
 
@@ -51,11 +67,15 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         header.backgroundColor = UIColor(red:0.94, green:0.94, blue:0.94, alpha:1.0)
         
         let label = UILabel()
-        label.frame = CGRect(x: 15, y: 10, width: self.view.frame.size.width-30.0, height: 50.0)
+        label.frame = CGRect(x: 15, y: 15, width: self.view.frame.size.width-30.0, height: 20.0)
         label.text = "User info"
         label.textColor = UIColor(red:0.60, green:0.60, blue:0.60, alpha:1.0)
         header.addSubview(label)
         
         return header
     }
+	
+	func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+		return UIView(frame: CGRect.zero)
+	}
 }

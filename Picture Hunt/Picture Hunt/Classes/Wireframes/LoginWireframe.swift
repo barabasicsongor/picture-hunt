@@ -33,13 +33,9 @@ class LoginWireframe {
 	// MARK: - Public methods
 	
 	func startLoginFlow() {
-        // TODO: Set this back
-//		welcomeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController
-//		welcomeViewController?.delegate = self
-//		window.rootViewController = welcomeViewController
-        
-        settingsVC = UIStoryboard(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController
-        window.rootViewController = settingsVC
+		welcomeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController
+		welcomeViewController?.delegate = self
+		window.rootViewController = welcomeViewController
 	}
 	
 }

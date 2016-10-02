@@ -13,10 +13,9 @@ class RootWireframe {
 	// MARK: - Properties
 	
 	fileprivate var window: UIWindow!
-	fileprivate var appEnvironment: AppEnvironment?
 	fileprivate var loginWireframe: LoginWireframe?
 	fileprivate var mainWireframe: MainWireframe?
-
+	
 	// MARK: - Lifecycle
 	
 	init(window: UIWindow) {
@@ -26,10 +25,8 @@ class RootWireframe {
 	// MARK: - Public methods
 	
 	func startFlow() {
-		appEnvironment = AppEnvironment()
-		appEnvironment?.setup()
 		
-		if UserDefaults.standard.bool(forKey: Defaults.loggedIn) == true {
+		if AuthService().isLoggedIn() == true {
 			// Logged in
 			mainWireframe = MainWireframe(window: window)
 			mainWireframe?.delegate = self
@@ -54,5 +51,8 @@ extension RootWireframe: LoginWireframeDelegate {
 }
 
 extension RootWireframe: MainWireframeDelegate {
-	
+	func didLogOut() {
+		window.rootViewController = UIViewController()
+		startFlow()
+	}
 }
